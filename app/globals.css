@@ -77,7 +77,7 @@
     @apply flex justify-start flex-wrap items-center gap-2;
 }
 
-.home__cars-wrapper {
+.home__cards-wrapper {
     @apply grid 2xl:grid-cols-4 xl:grid-cols-3 md:grid-cols-2 grid-cols-1 w-full gap-8 pt-14;
 }
 
@@ -87,15 +87,22 @@
 /* END: Home styles */
 
 /* START: Car Card styles */
-.car-card {
+
+.card__links {
+    @apply grid md:grid-cols-3 gap-4;
+}
+.stats-card {
+    @apply flex flex-col gap-2 p-6 justify-center items-center text-black-100  ;
+}
+.home-card {
     @apply flex flex-col p-6 justify-center items-start text-black-100 bg-primary-blue-100 hover:bg-white hover:shadow-md rounded-3xl;
 }
 
-.car-card__content {
+.home-card__content {
     @apply w-full flex justify-between items-start gap-2;
 }
 
-.car-card__content-title {
+.home-card__content-title {
     @apply text-[22px] leading-[26px] font-bold capitalize;
 }
 
@@ -111,7 +118,7 @@
     @apply self-end text-[14px] leading-[17px] font-medium;
 }
 
-.car-card__image {
+.home-card__image {
     @apply relative w-full h-40 my-3 object-contain;
 }
 
@@ -128,7 +135,7 @@
 }
 
 .car-card__btn-container {
-    @apply hidden group-hover:flex absolute bottom-0 w-full z-10;
+    @apply hidden group-hover:flex absolute bottom-0 w-full z-10 ;
 }
 /* END: Car Card styles */
 
